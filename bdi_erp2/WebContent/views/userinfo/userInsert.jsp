@@ -6,7 +6,7 @@
 	<form action="<%=rPath%>/views/userinfo/userInsertOK.jsp" onsubmit="return checkVal()">
 	<fieldset>
 		<legend>유저등록</legend>
-		<table class="table table-bodered">
+		<table class="table table-bordered">
 			<tr>
 				<th>이름</th>
 				<td><input type="text" name="uiName"></td>
