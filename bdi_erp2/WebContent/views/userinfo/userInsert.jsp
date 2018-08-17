@@ -5,7 +5,7 @@
 <div class="container">
 	<form action="<%=rPath%>/views/userinfo/userInsertOK.jsp" onsubmit="return checkVal()">
 	<fieldset>
-		<legend>유저등록</legend>
+		<legend>유저 등록</legend>
 		<table class="table table-bordered">
 			<tr>
 				<th>이름</th>

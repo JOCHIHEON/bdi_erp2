@@ -10,6 +10,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="/views/common/common.jsp"%>
+<style>
+	h4,th,tr{text-align:center;}
+</style>
 <body>
 <div class="container">
 	<div style="margin:10px;">
@@ -34,7 +37,7 @@ ResultSet rs = ps.executeQuery();
 while(rs.next()){
 %>
 				<tr>
-					<td><%=rs.getInt("uiNo") %></td>
+					<td><a href="<%=rPath%>/views/userinfo/userViews.jsp?uiNo=<%=rs.getInt("uiNo") %>"><%=rs.getInt("uiNo") %></td>
 					<td><%=rs.getString("uiName") %></td>
 					<td><%=rs.getString("uiId") %></td>
 					<td><%=rs.getString("uiDesc") %></td>
