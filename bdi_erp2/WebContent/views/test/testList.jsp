@@ -16,7 +16,7 @@
 <body>
 <div class="container">
 	<div style="margin:10px;">
-	<h4>유저리스트</h4>
+	<h4>테스트리스트</h4>
 		<table class = "table table-bordered table-hover">
 			<thead>
 				<tr>

@@ -26,7 +26,7 @@ DBConnection.close();
 if(cnt==1){
 %>
 <script>
-	alert("유저수정이 정상적으로 이루어졌습니다.");
+	alert("사원정보수정이 정상적으로 이루어졌습니다.");
 	location.href="<%=rPath%>/views/userinfo/userList.jsp";
 </script>
 <%

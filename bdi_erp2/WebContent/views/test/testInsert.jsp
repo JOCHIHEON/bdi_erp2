@@ -38,11 +38,12 @@ function checkVal(){
 				if(objs[i].value.length<1 || objs[i].value.length>=100){
 					alert(objs[i].name + "의 값을 확인해주세요.");
 					objs[i].focus();
-					return false;
-				}else if(objs[i].name="tBirth"){
-				if(objs[i].value.legnth<8){
-					alert(objs[i].name+"의 값을 확인해주세요.");
-					objs[i].focus();
+					if(objs[i].name="tBirth"){
+						if(objs[i].value.legnth<8){
+							alert(objs[i].name+"의 값을 확인해주세요.");
+							objs[i].focus();
+							return false;
+					}
 					return false;
 				}
 			}

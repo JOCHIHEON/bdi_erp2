@@ -29,7 +29,7 @@ if(rs.next()){
 %>
 	<form action="<%=rPath%>/views/userinfo/userUpdateOK.jsp" onsubmit="return checkVal()">
 	<fieldset>
-		<legend>유저 수정</legend>
+		<legend>사원정보</legend>
 		<table class="table table-bordered">
 			<tr>
 				<th>번호</th>

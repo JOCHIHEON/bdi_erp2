@@ -26,7 +26,7 @@ if(rs.next()){
 %>
 	<form action="<%=rPath%>/views/test/testUpdateOK.jsp" onsubmit="return checkVal()">
 	<fieldset>
-		<legend>유저 수정</legend>
+		<legend>테스트정보</legend>
 		<table class="table table-bordered">
 			<tr>
 				<th>번호</th>
@@ -53,6 +53,7 @@ if(rs.next()){
 			</tr>
 		</table>
 	</fieldset>
+	<input type="hidden" name="tNo" value="<%=tNo%>">
 	</form>
 </div>
 <script>
@@ -68,11 +69,12 @@ if(rs.next()){
 					if(objs[i].value.length<1 || objs[i].value.length>=100){
 						alert(objs[i].name + "의 값을 확인해주세요.");
 						objs[i].focus();
-						return false;
-					}else if(objs[i].name="tBirth"){
-					if(objs[i].value.legnth<8){
-						alert(objs[i].name+"의 값을 확인해주세요.");
-						objs[i].focus();
+						if(objs[i].name="tBirth"){
+							if(objs[i].value.legnth<8){
+								alert(objs[i].name+"의 값을 확인해주세요.");
+								objs[i].focus();
+								return false;
+						}
 						return false;
 					}
 				}
