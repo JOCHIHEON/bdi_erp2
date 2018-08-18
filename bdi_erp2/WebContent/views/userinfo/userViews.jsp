@@ -14,7 +14,6 @@ String uiDesc = "";
 int uiNo = Integer.parseInt(request.getParameter("uiNo"));
 int uiAge = 0;
 int diNo = 0;
-
 Connection con = DBConnection.getCon();
 String sql ="select uiName,uiId,uiDesc,uiNo,uiAge,diNo from user_info where uiNo=?;";
 PreparedStatement ps = con.prepareStatement(sql);
@@ -65,6 +64,7 @@ if(rs.next()){
 			</tr>
 		</table>
 	</fieldset>
+	<input type="hidden" name="uiNo" value="<%=uiNo%>">
 	</form>
 </div>
 <script>
