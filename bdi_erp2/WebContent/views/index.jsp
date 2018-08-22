@@ -14,6 +14,10 @@ if(menu==null || menu.equals("home")){
 			rightUrl += "/userinfo/userList.jsp";
 		} else if(smenu.equals("testList")){
 			rightUrl += "/test/testList.jsp";
+		} else if(smenu.equals("userInsert")){
+			rightUrl += "/userinfo/userInsert.jsp";
+		} else if(smenu.equals("userView")){
+			rightUrl += "/userinfo/userViews.jsp?uiNo=";
 		}
 	}
 }

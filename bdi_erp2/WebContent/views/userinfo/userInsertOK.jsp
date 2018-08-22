@@ -26,7 +26,7 @@ if(cnt==1){
 %>
 <script>
 	alert("유저등록이 정상적으로 이루어졌습니다.");
-	location.href="<%=rPath%>/views/userinfo/userList.jsp";
+	location.href="<%=rPath%>/views/userinfo/index.jsp?";
 </script>
 <%
 }
